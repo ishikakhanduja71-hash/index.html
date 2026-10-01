@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Aman 💗</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Georgia,serif;
+    background:linear-gradient(135deg,#fff0f5,#ffdce8,#fff8fa);
+    color:#5a2636;
+    min-height:100vh;
+}
+
+.container{
+    width:92%;
+    max-width:1050px;
+    margin:30px auto;
+    padding:25px;
+    background:white;
+    border-radius:30px;
+    box-shadow:0 15px 50px rgba(194,24,91,0.20);
+}
+
+.hero{
+    text-align:center;
+    padding:30px 15px;
+}
+
+.heart{
+    font-size:70px;
+    animation:beat 1.2s infinite;
+}
+
+@keyframes beat{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+h1{
+    color:#c2185b;
+    font-size:48px;
+    margin:12px 0;
+}
+
+.subtitle{
+    font-size:20px;
+    line-height:1.7;
+}
+
+.section{
+    margin-top:30px;
+    padding:25px;
+    background:#fff6f9;
+    border:1px solid #f2bdce;
+    border-radius:25px;
+}
+
+h2{
+    color:#c2185b;
+    text-align:center;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:12px;
+}
+
+.message-button{
+    border:none;
+    border-radius:25px;
+    padding:14px 15px;
+    background:linear-gradient(135deg,#ec407a,#c2185b);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.message-button:hover{
+    transform:scale(1.05);
+}
+
+.message-box{
+    margin-top:25px;
+    padding:25px;
+    min-height:100px;
+    background:white;
+    border:2px dashed #e5a2b9;
+    border-radius:20px;
+    text-align:center;
+    font-size:19px;
+    line-height:1.7;
+}
+
+.click-card{
+    text-align:center;
+    padding:30px 20px;
+    background:white;
+    border-radius:25px;
+    border:2px solid #f2bdce;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.click-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(194,24,91,0.18);
+}
+
+.click-title{
+    font-size:40px;
+    font-weight:bold;
+    color:#c2185b;
+}
+
+.click-text{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.special-message{
+    display:none;
+    margin-top:20px;
+    padding:25px;
+    background:white;
+    border:2px dashed #e5a2b9;
+    border-radius:20px;
+    text-align:center;
+    font-size:19px;
+    line-height:1.8;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#8a5365;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="heart">💗</div>
+
+<p>✨ A little surprise made specially for you ✨</p>
+
+<h1>Happy Birthday, Aman 🎂</h1>
+
+<p class="subtitle">
+19 little messages, beautiful memories<br>
+and a little piece of our story — just for you. 💗
+</p>
+
+</div>
+
+
+<!-- 19 MESSAGES -->
+
+<div class="section">
+
+<h2>💌 Open Your Little Messages</h2>
+
+<p style="text-align:center;">
+Click any message and your little surprise will appear below. 💗
+</p>
+
+<div class="buttons">
+
+<button class="message-button" onclick="showMessage(0)">💌 Message 1</button>
+<button class="message-button" onclick="showMessage(1)">💌 Message 2</button>
+<button class="message-button" onclick="showMessage(2)">💌 Message 3</button>
+<button class="message-button" onclick="showMessage(3)">💌 Message 4</button>
+<button class="message-button" onclick="showMessage(4)">💌 Message 5</button>
+<button class="message-button" onclick="showMessage(5)">💌 Message 6</button>
+<button class="message-button" onclick="showMessage(6)">💌 Message 7</button>
+<button class="message-button" onclick="showMessage(7)">💌 Message 8</button>
+<button class="message-button" onclick="showMessage(8)">💌 Message 9</button>
+<button class="message-button" onclick="showMessage(9)">💌 Message 10</button>
+<button class="message-button" onclick="showMessage(10)">💌 Message 11</button>
+<button class="message-button" onclick="showMessage(11)">💌 Message 12</button>
+<button class="message-button" onclick="showMessage(12)">💌 Message 13</button>
+<button class="message-button" onclick="showMessage(13)">💌 Message 14</button>
+<button class="message-button" onclick="showMessage(14)">💌 Message 15</button>
+<button class="message-button" onclick="showMessage(15)">💌 Message 16</button>
+<button class="message-button" onclick="showMessage(16)">💌 Message 17</button>
+<button class="message-button" onclick="showMessage(17)">💌 Message 18</button>
+<button class="message-button" onclick="showMessage(18)">💌 Message 19</button>
+
+</div>
+
+<div id="messageBox" class="message-box">
+💗 Kisi bhi message par click karo...
+</div>
+
+</div>
+
+
+<!-- I × A -->
+
+<div class="section">
+
+<h2>💗 Something Special</h2>
+
+<div class="click-card" onclick="showIA()">
+
+<div class="click-title">
+I × A
+</div>
+
+<p class="click-text">
+✨ Click here to open our little story ✨
+</p>
+
+</div>
+
+<div id="iaBox" class="special-message"></div>
+
+</div>
+
+
+<!-- CHERRYPIE -->
+
+<div class="section">
+
+<h2>🍒 A Secret Nickname</h2>
+
+<div class="click-card" onclick="showCherry()">
+
+<div class="click-title">
+🍒 My Cherrypie
+</div>
+
+<p class="click-text">
+Click to discover why this nickname is special. 💗
+</p>
+
+</div>
+
+<div id="cherryBox" class="special-message"></div>
+
+</div>
+
+
+<!-- LOVE LETTER -->
+
+<div class="section">
+
+<h2>💌 A Little Letter</h2>
+
+<div class="click-card" onclick="showLetter()">
+
+<div class="click-title">
+💗 Open My Letter
+</div>
+
+<p class="click-text">
+There is something I want to tell you...
+</p>
+
+</div>
+
+<div id="letterBox" class="special-message"></div>
+
+</div>
+
+
+<div class="footer">
+Made with 💗 specially for Aman
+</div>
+
+</div>
+
+
+<script>
+
+const messages = [
+
+"Happy Birthday to the person who makes my ordinary days feel a little more special. 💗",
+
+"I hope this new year of your life brings you endless happiness, success and beautiful memories. ✨",
+
+"No matter how many birthdays come and go, I hope you always keep that beautiful smile. 💗",
+
+"Thank you for being such a special part of my life and for making so many moments worth remembering. 💕",
+
+"Some memories become our favourites without us even realising it. So many of mine have you in them. 🥹💗",
+
+"Today is your day, but I also want to celebrate the wonderful person you are every other day. 🎂",
+
+"I wish you all the happiness you deserve, today and always. 🌸",
+
+"Keep chasing your dreams, keep smiling and never forget how loved you are. 💗",
+
+"If I could wrap happiness into a gift, I would give you a box full of it today. 🎁",
+
+"Here is your little reminder: you are genuinely important to me and I am grateful for every beautiful memory. 💗",
+
+"I hope we make many more silly, sweet and unforgettable memories together. ♾️",
+
+"These 19 messages are just a few little reasons to make you smile today. 💌",
+
+"Whenever you look back at our memories, I hope they always make you smile. 📸💗",
+
+"May this year give you new reasons to be proud of yourself and excited for what comes next. ✨",
+
+"I hope your day is filled with your favourite people, favourite food, lots of laughter and a very big smile. 🎉",
+
+"A birthday is one day, but beautiful memories can last forever. Here is to making many more. 💗",
+
+"You deserve a year full of peace, happiness, success and all the little things that make life beautiful. 🌷",
+
+"Thank you for being you. Never change the good heart that makes you special. 💕",
+
+"And finally... Happy Birthday, Aman! 🎂💗 May your smile stay bright and your year be beautiful."
+
+];
+
+
+function showMessage(number){
+
+document.getElementById("messageBox").innerHTML =
+"💌 <b>Message " + (number + 1) + "</b><br><br>" +
+messages[number];
+
+document.getElementById("messageBox").scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+
+
+function showIA(){
+
+const box = document.getElementById("iaBox");
+
+box.innerHTML =
+
+"💗 <b>I × A</b> 💗<br><br>" +
+
+"<b>03 NOVEMBER 2025</b><br><br>" +
+
+"The day our little story got its beginning. ✨<br><br>" +
+
+"Two names... one beautiful chapter. 💗<br><br>" +
+
+"<b>Ishika × Aman</b><br><br>" +
+
+"From that day to every memory we keep making, " +
+
+"our little I × A will always have a special place in my heart. ♾️💗";
+
+box.style.display = "block";
+
+}
+
+
+function showCherry(){
+
+const box = document.getElementById("cherryBox");
+
+box.innerHTML =
+
+"🍒 <b>My Cherrypie = Aman ❤️</b> 🍒<br><br>" +
+
+"My favourite little nickname for my favourite person. 💗<br><br>" +
+
+"Sweet enough to make my days happier, " +
+
+"and special enough to have his own little corner in my heart. 🥹💗";
+
+box.style.display = "block";
+
+}
+
+
+function showLetter(){
+
+const box = document.getElementById("letterBox");
+
+box.innerHTML =
+
+"💌 <b>Dear Aman, ❤️</b><br><br>" +
+
+"Today is your special day and I wanted to make something little but special for you.<br><br>" +
+
+"From <b>03 November 2025</b> to all the memories we have collected since then, every little moment has become a part of our story.<br><br>" +
+
+"These little messages are just a reminder of how special you are to me.<br><br>" +
+
+"I hope your birthday is filled with happiness, laughter, good food, beautiful moments and everything you wish for. ✨<br><br>" +
+
+"Keep smiling, keep chasing your dreams and always stay the amazing person you are.<br><br>" +
+
+"<b>Happy Birthday once again, Aman! 🎂💗</b><br><br>" +
+
+"With lots of love,<br><b>Ishika ❤️</b>";
+
+box.style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
